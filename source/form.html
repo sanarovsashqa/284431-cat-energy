@@ -13,10 +13,10 @@
       <img class="logo__icon" src="#" alt="Питание для котов cat-energy">
       <img class="logo__header" src="#" alt="Логотип cat-energy">
     </a>
+    <button class="main-nav-toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -38,40 +38,36 @@
       <p class="program__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="program__fieldset">
-          <legend class="program__legend">
-            <span class="visually-hidden">Информация о коте</span>
-          </legend>
+          <legend class="visually-hidden">Информация о коте</legend>
           <ul class="program__list">
             <li class="program__item">
-              <label class="program__label" for="program__input--name">Имя:*</label>
-              <input class="program__input" id="program__input--name" type="text" name="name" placeholder="Барсик" required>
+              <label class="program__label" for="name">Имя:*</label>
+              <input class="program__input" id="name" type="text" name="name" placeholder="Барсик" required>
             </li>
             <li class="program__item">
-              <label class="program__label" for="program__input--weight">Вес (кг):*</label>
-              <input class="program__input" id="program__input--weight" type="number" name="weight" placeholder="7" required>
+              <label class="program__label" for="weight">Вес (кг):*</label>
+              <input class="program__input" id="weight" type="number" name="weight" placeholder="7" required>
             </li>
             <li class="program__item">
-              <label class="program__label" for="program__input--age">Возраст (лет):</label>
-              <input class="program__input" id="program__input--age" type="number" name="age" placeholder="7">
+              <label class="program__label" for="age">Возраст (лет):</label>
+              <input class="program__input" id="age" type="number" name="age" placeholder="7">
             </li>
           </ul>
         </fieldset>
         <fieldset class="program__fieldset">
-          <legend class="program__legend">
-            <span class="visually-hidden">Выбор цели</span>
-          </legend>
+          <legend class="visually-hidden">Выбор цели</legend>
           <ul class="program__list">
             <li class="program__item">
-              <input class="program__radio" id="program__radio--minus" type="radio" name="goal" value="minus" checked>
-              <label class="program__label" for="program__radio--minus">Похудение</label>
+              <input class="program__radio" id="minus" type="radio" name="goal" value="minus" checked>
+              <label class="program__label" for="minus">Похудение</label>
             </li>
             <li class="program__item">
-              <input class="program__radio" id="program__radio--plus" type="radio" name="goal" value="plus">
-              <label class="program__label" for="program__radio--plus">Набор массы</label>
+              <input class="program__radio" id="plus" type="radio" name="goal" value="plus">
+              <label class="program__label" for="plus">Набор массы</label>
             </li>
             <li class="program__item">
-              <input class="program__radio" id="program__radio--dont-know" type="radio" name="goal" value="dont-know">
-              <label class="program__label" for="program__radio--dont-know">Не знаю (нужен ваш совет)</label>
+              <input class="program__radio" id="dont-know" type="radio" name="goal" value="dont-know">
+              <label class="program__label" for="dont-know">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
@@ -79,38 +75,38 @@
           <legend class="program__legend">Контактные данные (владельца кота)</legend>
           <ul class="program__list">
             <li class="program__item">
-              <label class="program__label" for="program__input--email">E-mail:*</label>
-              <input class="program__input" id="program__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <label class="program__label" for="email">E-mail:*</label>
+              <input class="program__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             </li>
             <li class="program__item">
-              <label class="program__label" for="program__input--tel">Телефон:*</label>
-              <input class="program__input" id="program__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+              <label class="program__label" for="tel">Телефон:*</label>
+              <input class="program__input" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
         </fieldset>
         <fieldset class="program__fieldset">
           <legend class="program__legend">Комментарий</legend>
-          <label class="visually-hidden" for="program__comment">Расскажите обо всех повадках кота</label>
-          <textarea class="program__comment" id="program__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
+          <textarea class="program__comment" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="program__fieldset">
           <legend class="program__legend">Дополнительно</legend>
           <ul class="program__list">
             <li class="program__item">
-              <input class="program__checkbox" id="program__checkbox--sweetener" type="checkbox" name="sweetener" checked>
-              <label class="program__label" for="program__checkbox--sweetener">Сахарозаменитель</label>
+              <input class="program__checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
+              <label class="program__label" for="sweetener">Сахарозаменитель</label>
             </li>
             <li class="program__item">
-              <input class="program__checkbox" id="program__checkbox--water" type="checkbox" name="water">
-              <label class="program__label" for="program__checkbox--water">Питьевая вода</label>
+              <input class="program__checkbox" id="water" type="checkbox" name="water">
+              <label class="program__label" for="water">Питьевая вода</label>
             </li>
             <li class="program__item">
-              <input class="program__checkbox" id="program__checkbox--milk" type="checkbox" name="milk">
-              <label class="program__label" for="program__checkbox--milk">Молоко</label>
+              <input class="program__checkbox" id="milk" type="checkbox" name="milk">
+              <label class="program__label" for="milk">Молоко</label>
             </li>
             <li class="program__item">
-              <input class="program__checkbox" id="program__checkbox--vitamins" type="checkbox" name="vitamins">
-              <label class="program__label" for="program__checkbox--vitamins">Витамины</label>
+              <input class="program__checkbox" id="vitamins" type="checkbox" name="vitamins">
+              <label class="program__label" for="vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -121,7 +117,7 @@
 
     <section class="adress">
       <h2 class="visually-hidden">Наш адрес</h2>
-      <b class="adress__title">Приглашаем к сотрудничеству дилеров!</b>
+      <p class="adress__title">Приглашаем к сотрудничеству дилеров!</p>
       <p class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <img class="adress__map" src="#" alt="Карта с адресом ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
     </section>
