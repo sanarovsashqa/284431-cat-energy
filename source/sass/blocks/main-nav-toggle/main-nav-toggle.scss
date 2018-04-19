@@ -7,7 +7,7 @@
     display: block;
     width: 24px;
     height: 18px;
-    background: url("../../../img/icon-mobile-menu.svg") no-repeat;
+    background: url("../img/icon-mobile-menu.svg") no-repeat;
   }
 
   &:hover {
@@ -16,7 +16,7 @@
 
   &--opened {
     &::before {
-      background: url("../../../img/icon-close.svg") no-repeat;
+      background: url("../img/icon-close.svg") no-repeat;
     }
   }
 }

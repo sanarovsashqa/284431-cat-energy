@@ -47,7 +47,7 @@
       display: block;
       width: 35px;
       height: 49px;
-      background: url("../../../img/icon-cat-slim.svg") no-repeat;
+      background: url("../img/icon-cat-slim.svg") no-repeat;
     }
   }
 
@@ -61,7 +61,7 @@
       display: block;
       width: 67px;
       height: 28px;
-      background: url("../../../img/icon-cat-pro.svg") no-repeat;
+      background: url("../img/icon-cat-pro.svg") no-repeat;
     }
   }
 }
@@ -98,14 +98,14 @@
     width: 24px;
     height: 11px;
     margin-left: 10px;
-    background: url("../../../img/icon-right-arrow-long.svg") no-repeat;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat;
   }
 
   &:hover,
   &:focus {
     &::after {
       width: 33px;
-      background: url("../../../img/icon-right-arrow-long.svg") no-repeat;
+      background: url("../img/icon-right-arrow-long.svg") no-repeat;
     }
   }
 
