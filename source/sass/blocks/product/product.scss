@@ -19,7 +19,7 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #111111;
+  color: $main-text-color;
 }
 
 .product__row {
@@ -35,7 +35,7 @@
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $secondary-text-color;
 }
 
 .product__button {

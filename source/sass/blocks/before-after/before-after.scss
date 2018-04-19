@@ -1,6 +1,6 @@
 .before-after {
   padding-top: 20px;
-  background-color: #f2f2f2;
+  background-color: $secondary-color;
 }
 
 .before-after__title {
@@ -19,7 +19,7 @@
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $secondary-text-color;
 }
 
 .before-after__result-wrapper {
@@ -69,8 +69,8 @@
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
-  background-color: #f2f2f2;
+  color: $secondary-text-color;
+  background-color: $secondary-color;
   vertical-align: baseline;
 }
 

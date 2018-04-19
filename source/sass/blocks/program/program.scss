@@ -50,7 +50,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: $secondary-text-color;
   border: 1px solid rgba(205, 205, 205, 0.5);
 
   &:hover {
@@ -152,7 +152,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: $secondary-text-color;
   border: 1px solid rgba(205, 205, 205, 0.5);
   resize: none;
 
@@ -219,7 +219,7 @@
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 16px;
-  color: #444444;
+  color: $secondary-text-color;
   text-align: center;
 }
 
