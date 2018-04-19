@@ -1,8 +1,19 @@
 .copyright {
-
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
 }
 
-.copyright .copyright__logo {
-
+.copyright:hover .copyright__logo,
+.copyright:focus .copyright__logo {
+  fill: $primary-color;
 }
 
+.copyright:active {
+  opacity: 0.3;
+}

@@ -11,12 +11,19 @@ html {
 body {
   margin: 0;
   padding: 0;
+
+  width: 320px;
+
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: #000000;
+  color: #111111;
   background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
 }
 
 img,

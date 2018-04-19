@@ -1,15 +1,22 @@
-.logo {
+.logo:not(.logo--index) {
+  &:hover {
+    opacity: 0.8;
+  }
 
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-.logo .logo__icon {
-
+.logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 66px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
-.logo .logo__header {
-
+.logo--footer {
+  display: block;
+  text-align: center;
 }
-
-.logo .logo__footer {
-
-}
