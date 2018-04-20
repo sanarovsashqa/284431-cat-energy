@@ -1,0 +1,252 @@
+.program__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.program__subtitle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.program__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.program__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.program__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.program__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.program__input {
+  width: 100%;
+  min-height: 45px;
+  margin-left: 10px;
+  padding: 0 15px;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    border: 1px solid #444444;
+    outline: 1px solid #444444;
+  }
+}
+
+.program__legend {
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.program__label--radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    display: none;
+    width: 12px;
+    height: 12px;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &:hover {
+    &::before {
+      border: 1px solid rgba(205, 205, 205, 1);
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.program__radio:checked + .program__label--radio::after {
+  display: block;
+}
+
+.program__radio:focus + .program__label--radio::before {
+  border: 1px solid rgba(205, 205, 205, 1);
+}
+
+.program__input--email {
+  padding-right: 40px;
+  background: url("../img/icon-mail.svg") no-repeat;
+  background-size: 17px 13px;
+  background-position: center right 15px;
+
+  &:focus {
+    background: url("../img/icon-mail-green.svg") no-repeat;
+    background-size: 17px 13px;
+    background-position: center right 15px;
+  }
+}
+
+.program__input--tel {
+  padding-right: 40px;
+  background: url("../img/icon-phone.svg") no-repeat;
+  background-position: center right 13px;
+  background-size: 20px 20px;
+
+  &:focus {
+    background: url("../img/icon-phone-green.svg") no-repeat;
+    background-position: center right 13px;
+    background-size: 20px 20px;
+  }
+}
+
+.program__comment {
+  width: 100%;
+  min-height: 150px;
+  padding: 13px;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  resize: none;
+
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    border: 1px solid #444444;
+    outline: 1px solid #444444;
+  }
+}
+
+.program__label--checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    display: none;
+    width: 21px;
+    height: 16px;
+    background: url("../img/icon-tick.svg");
+    cursor: pointer;
+  }
+
+  &:hover {
+    &::before {
+      border: 1px solid rgba(205, 205, 205, 1);
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.program__checkbox:checked + .program__label--checkbox::after {
+  display: block;
+}
+
+.program__checkbox:focus + .program__label--checkbox::before {
+  border: 1px solid rgba(205, 205, 205, 1);
+}
+
+.program__required-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 16px;
+  color: $secondary-text-color;
+  text-align: center;
+}
+
+.program__fieldset--goal {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 28px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.program__fieldset--information {
+  margin-bottom: 10px;
+}
+
+.program__fieldset--contacts {
+  margin-bottom: 19px;
+}
+
+.program__fieldset--comment {
+  margin-bottom: 28px;
+}
+
+.program__fieldset--extra {
+  margin-bottom: 20px;
+}
+
+.program__button {
+  margin-bottom: 22px;
+}

@@ -1,0 +1,37 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 66px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-nav__link {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $main-text-color;
+
+  &--current {
+    padding-bottom: 5px;
+    border-bottom: 2px solid $primary-color;
+  }
+
+  &:not(.main-nav__link--current) {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

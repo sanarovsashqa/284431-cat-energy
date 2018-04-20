@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__item {
+  min-width: 30px;
+  margin: 0 13px;
+  text-align: center;
+}
+
+.social__link:hover .social__logo,
+.social__link:focus .social__logo {
+  fill: $primary-color;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}
