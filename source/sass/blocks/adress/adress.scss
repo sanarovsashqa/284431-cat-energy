@@ -44,3 +44,41 @@
     background-size: cover;
   }
 }
+
+.adress__map {
+  display: block;
+  height: 362px;
+}
+
+@media (min-width: $tablet-width) {
+  .adress__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-right: 41px;
+    padding-bottom: 57px;
+    padding-left: 41px;
+  }
+
+  .adress__title {
+    width: 155px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .adress__text {
+    width: 155px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    &--margin {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .adress__map {
+    height: 396px;
+  }
+}
