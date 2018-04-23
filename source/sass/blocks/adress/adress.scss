@@ -1,12 +1,15 @@
+.adress {
+  background-color: #ffffff;
+
+  &--gray {
+    background-color: $secondary-color;
+  }
+}
+
 .adress__title-wrapper {
   display: flex;
   padding-top: 30px;
   padding-bottom: 25px;
-  background-color: #ffffff;
-}
-
-.adress__title-wrapper--gray {
-  background-color: $secondary-color;
 }
 
 .adress__title {
@@ -29,6 +32,7 @@
 
 .adress__map-wrapper {
   position: relative;
+  display: flex;
 
   &::before {
     content: "";
@@ -48,6 +52,7 @@
 .adress__map {
   display: block;
   height: 362px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
