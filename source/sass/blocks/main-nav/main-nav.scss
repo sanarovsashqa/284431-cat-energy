@@ -92,7 +92,7 @@
         height: 2px;
         background-color: $primary-color;
       }
-   }
+    }
   }
 }
 
@@ -114,6 +114,7 @@
 
   .main-nav__link--black {
     color: $main-text-color;
+
     &::after {
       background-color: $primary-color;
     }
