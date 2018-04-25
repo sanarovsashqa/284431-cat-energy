@@ -225,21 +225,14 @@
 
 .program__fieldset--goal {
   position: relative;
+  margin-top: -1px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 30px;
   padding-top: 20px;
   padding-bottom: 10px;
-  margin-bottom: 30px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: -20px;
-    top: 0;
-    display: block;
-    border: 1px solid #ededed;
-    width: 320px;
-    min-height: 158px;
-  }
+  padding-left: 20px;
+  border: 1px solid #ededed;
 }
 
 .program__fieldset--information {
@@ -307,15 +300,10 @@
   }
 
   .program__fieldset--goal {
+    margin: 0;
     margin-bottom: 77px;
     padding-top: 24px;
     padding-left: 29px;
-
-    &::before {
-      left: 0;
-      width: 630px;
-      min-height: 196px;
-    }
   }
 
   .program__label--radio {
@@ -440,16 +428,12 @@
 
   .program__fieldset--information {
     width: 570px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .program__fieldset--goal {
     width: 570px;
-    margin-bottom: 0;
-
-    &::before {
-      width: 570px;
-    }
+    margin-bottom: 71px;
   }
 
   .program__list--contacts {

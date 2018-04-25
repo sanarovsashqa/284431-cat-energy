@@ -3,19 +3,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: -1px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: -20px;
-    top: -1px;
-    display: block;
-    width: 320px;
-    height: 210px;
-    border-right: 1px solid #ededed;
-    border-top: 1px solid #ededed;
-    border-left: 1px solid #ededed;
-  }
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-left: 20px;
+  border: 1px solid #ededed;
 }
 
 .product__img {
@@ -60,8 +51,11 @@
     flex-direction: column;
     align-items: center;
     width: 324px;
+    margin: 0;
+    padding: 0;
     margin-bottom: 52px;
     background: linear-gradient(to bottom, #ffffff 90px, $secondary-color 90px);
+    border: none;
 
     &::before {
       display: none;

@@ -74,6 +74,8 @@
   .choose-program__img {
     position: absolute;
     z-index: -1;
+    top: 300px;
+    left: 50px;
     order: 2;
   }
 
@@ -121,5 +123,10 @@
 
   .choose-program__subtitle {
     margin-bottom: 51px;
+  }
+
+  .choose-program__img {
+    top: 280px;
+    left: 520px;
   }
 }
