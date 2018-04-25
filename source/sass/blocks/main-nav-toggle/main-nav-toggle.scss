@@ -1,4 +1,6 @@
 .main-nav-toggle {
+  margin-left: auto;
+  padding: 0;
   border: none;
   background-color: inherit;
 
@@ -18,5 +20,11 @@
     &::before {
       background: url("../img/icon-close.svg") no-repeat;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav-toggle {
+    display: none;
   }
 }

@@ -9,14 +9,40 @@
 }
 
 .logo-wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  min-height: 66px;
-  border-bottom: 1px solid #e6e6e6;
+  min-height: 65px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #e6e6e6;
+  }
 }
 
 .logo--footer {
   display: block;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-wrapper {
+    &::after {
+      display: none;
+    }
+  }
+
+  .logo--footer {
+    display: flex;
+    align-items: center;
+    width: 162px;
+    text-align: left;
+  }
 }
