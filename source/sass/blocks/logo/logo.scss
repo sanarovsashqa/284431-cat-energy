@@ -33,6 +33,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .logo__header {
+    width: 173px;
+    height: 58px;
+  }
+
   .logo-wrapper {
     &::after {
       display: none;
@@ -44,5 +49,12 @@
     align-items: center;
     width: 162px;
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__header {
+    width: 202px;
+    height: 59px;
   }
 }
