@@ -1,3 +1,7 @@
+.program {
+  overflow: hidden;
+}
+
 .program__title {
   margin: 0;
   padding: 0;
@@ -64,9 +68,27 @@
 }
 
 .program__legend {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
   margin-bottom: 32px;
   font-size: 24px;
   line-height: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 20px);
+    display: inline-flex;
+    width: 100vw;
+    height: 3px;
+    background-color: $primary-color;
+  }
+}
+
+.program__legend--contacts {
+  width: 181px;
 }
 
 .program__label--radio {
@@ -230,13 +252,13 @@
   margin-right: -20px;
   margin-bottom: 30px;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   padding-left: 20px;
   border: 1px solid #ededed;
 }
 
 .program__fieldset--information {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .program__fieldset--contacts {
@@ -329,6 +351,27 @@
     margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: calc(100% + 40px);
+      display: inline-flex;
+      width: 100vw;
+      height: 3px;
+      margin-top: 6px;
+      background-color: $primary-color;
+    }
+
+    &::after {
+      left: calc(100% + 40px);
+      margin-top: 6px;
+    }
+  }
+
+  .program__legend--contacts {
+    width: auto;
   }
 
   .program__fieldset--contacts {
@@ -434,6 +477,7 @@
   .program__fieldset--goal {
     width: 570px;
     margin-bottom: 71px;
+    padding-bottom: 12px;
   }
 
   .program__list--contacts {
@@ -451,7 +495,7 @@
   }
 
   .program__fieldset--comment {
-    margin-bottom: 67px;
+    margin-bottom: 64px;
   }
 
   .program-checkbox-wrapper {
@@ -474,5 +518,15 @@
 
   .program-button-wrapper {
     margin-bottom: 82px;
+  }
+
+  .program__input--email,
+  .program__input--email:focus {
+    background-position: center right 20px;
+  }
+
+  .program__input--tel,
+  .program__input--tel:focus {
+    background-position: center right 18px;
   }
 }
