@@ -36,8 +36,16 @@
   justify-content: center;
 }
 
-.adress__map {
+.adress__map-interactive {
   position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 362px;
+}
+
+.adress__map {
+  position: absolute;
+  z-index: 0;
 
   &::before {
     content: "";
@@ -91,6 +99,10 @@
     min-width: 767px;
   }
 
+  .adress__map-interactive {
+    height: 400px;
+  }
+
   .adress__map {
     &::before {
       top: 175px;
@@ -118,6 +130,10 @@
 
   .adress__text {
     text-align: left;
+  }
+
+  .adress__map-interactive {
+    height: 405px;
   }
 
   .adress__map {

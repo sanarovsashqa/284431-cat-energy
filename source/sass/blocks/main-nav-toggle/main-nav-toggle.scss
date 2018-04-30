@@ -1,4 +1,9 @@
 .main-nav-toggle {
+  display: none;
+}
+
+.js .main-nav-toggle {
+  display: block;
   margin-left: auto;
   padding: 0;
   border: none;

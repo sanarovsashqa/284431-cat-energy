@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <script>
+    document.documentElement.classList.replace('no-js', 'js');
+  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
 
   <header class="page-header container">
     <div class="logo-wrapper">
@@ -47,8 +49,8 @@
           <h1 class="choose-program__title">Функциональное питание для котов</h1>
           <p class="choose-program__subtitle">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
             <img class="choose-program__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat-energy pro с курицей">
           </picture>
           <a class="choose-program__button button" href="form.html">Подобрать программу</a>
@@ -118,16 +120,16 @@
           <div class="before-after__img-wrapper">
             <div class="before-after__img-wrapper-left">
               <picture>
-                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                 <img class="before-after__img before-after__img--current" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
                   alt="Кот Борис до похудения">
               </picture>
             </div>
             <div class="before-after__img-wrapper-right">
               <picture>
-                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                 <img class="before-after__img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот Борис после похудения">
               </picture>
             </div>
@@ -154,9 +156,12 @@
         </div>
       </div>
       <div class="adress__map-wrapper">
+        <div class="adress__map-interactive">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1892234c06ef464cbd1bfd4d6a240f4469dff7569db783a3c149dec83bb312b5&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
         <picture class="adress__map">
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
           <img class="adress__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта с адресом ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
       </div>
