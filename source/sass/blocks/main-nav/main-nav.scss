@@ -1,4 +1,10 @@
 .main-nav {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+}
+
+.js .main-nav {
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -49,7 +55,7 @@
   }
 }
 
-.main-nav--open {
+.js .main-nav--open {
   position: relative;
   z-index: 1;
   opacity: 1;
@@ -57,6 +63,12 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .js .main-nav {
     position: relative;
     z-index: 1;
     opacity: 1;
