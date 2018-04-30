@@ -102,7 +102,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 78px;
+  margin-bottom: 36px;
 }
 
 .before-after__toggle-text {
@@ -298,6 +298,10 @@
   .before-after__toggle-text {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .before-after__toggle-wrapper {
+    margin-bottom: 77px;
   }
 }
 
