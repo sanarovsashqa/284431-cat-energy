@@ -16,8 +16,8 @@
   text-align: center;
 }
 
-.social__link:hover .social__logo-color,
-.social__link:focus .social__logo-color {
+.social__link:hover use,
+.social__link:focus use {
   fill: $primary-color;
 }
 

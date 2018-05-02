@@ -9,8 +9,8 @@
   color: $secondary-text-color;
 }
 
-.copyright:hover .copyright__logo,
-.copyright:focus .copyright__logo {
+.copyright:hover use,
+.copyright:focus use {
   fill: $primary-color;
 }
 
