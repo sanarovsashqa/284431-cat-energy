@@ -29,7 +29,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav-toggle {
+  .js .main-nav-toggle {
     display: none;
+
+    &::before {
+      display: none;
+    }
   }
 }
