@@ -10,6 +10,10 @@
   border: 1px solid #ededed;
 }
 
+.product__link {
+  width: 140px;
+}
+
 .product__img {
   display: block;
 }
@@ -66,6 +70,11 @@
   .product__link {
     display: flex;
     justify-content: center;
+    width: auto;
+  }
+
+  .product__picture {
+    width: 324px;
   }
 
   .product__img--small {
@@ -107,6 +116,10 @@
   .product {
     width: 245px;
     margin-bottom: 57px;
+  }
+
+  .product__picture {
+    width: 240px;
   }
 
   .product__row {

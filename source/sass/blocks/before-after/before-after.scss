@@ -233,23 +233,26 @@
     display: flex;
   }
 
-  .before-after__img-wrapper-right {
-    display: flex;
-    justify-content: flex-end;
-    width: 354px;
-    overflow: hidden;
-  }
-
   .before-after__img-wrapper-left {
-    display: flex;
-    justify-content: flex-start;
+    position: relative;
     width: 354px;
     padding-left: 16px;
     overflow: hidden;
   }
 
+  .before-after__img-wrapper-right {
+    position: relative;
+    width: 354px;
+    overflow: hidden;
+  }
+
   .before-after__img {
     display: block;
+
+    &--right {
+      position: relative;
+      right: 340px;
+    }
   }
 
   .before-after__img--current {
@@ -269,6 +272,7 @@
 
   .before-after__toggle {
     position: absolute;
+    top: -7px;
     width: 34px;
     height: 34px;
     margin: 0;
@@ -301,6 +305,7 @@
   }
 
   .before-after__toggle-wrapper {
+    position: relative;
     margin-bottom: 77px;
   }
 }
@@ -370,12 +375,15 @@
 
   .before-after__img {
     margin-bottom: 40px;
+
+    &--right {
+      right: 365px;
+    }
   }
 
   .before-after__toggle-wrapper {
-    position: relative;
     justify-content: flex-end;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 
   .before-after__toggle {
